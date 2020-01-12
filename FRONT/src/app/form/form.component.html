@@ -1,0 +1,17 @@
+<h2>Crear Ticket: </h2>
+<div>
+  <div class="form-group">
+    <label for="sistema">Sistema</label>
+    <input [(ngModel)]="ticket.sistema" type="text" class="form-control" id="sistema" placeholder="Teclee aqui el sistema de prueba">
+  </div>
+  <div class="form-group">
+    <label for="descripcion">Descripcion del error</label>
+    <textarea [(ngModel)]="ticket.descripcion" type="text" class="form-control" id="descripcion" placeholder="Teclee aqui descripcion de la falla encontrada"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="ano">Año</label>
+    <input [(ngModel)]="ticket.year" type="text" class="form-control" id="ano" placeholder="Teclee aqui el año de la prueba">
+  </div>
+
+  <button (click)="saveTicket()" class="btn btn-primary btn-block">Guardar</button>
+</div>
